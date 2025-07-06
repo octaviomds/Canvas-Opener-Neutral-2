@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Opener</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Canvas Opener</h1>
+            <p class="subtitle">Application vide prête pour le développement</p>
+        </header>
+        
+        <main>
+            <div class="welcome-card">
+                <h2>Bienvenue</h2>
+                <p>Cette application Electron est prête à être personnalisée selon vos besoins.</p>
+                
+                <div class="info-section">
+                    <h3>Informations système</h3>
+                    <ul id="system-info">
+                        <li>Version Node.js: <span id="node-version"></span></li>
+                        <li>Version Electron: <span id="electron-version"></span></li>
+                        <li>Plateforme: <span id="platform"></span></li>
+                    </ul>
+                </div>
+                
+                <button id="demo-button" class="primary-button">
+                    Cliquez-moi !
+                </button>
+                
+                <div id="message" class="message hidden"></div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="renderer.js"></script>
+</body>
+</html>
